@@ -5,6 +5,16 @@ from kirky.imagine import draw
 
 """
 To generate the Kirchhoff Graph for the matrix
+1 0 3 8
+0 1 5 5
+"""
+matrix = np.array([[Fraction(3),Fraction(8)], [Fraction(5),Fraction(5)]])
+k = Kirchhoff(matrix)
+k.find()
+draw(k, 'drawings/kirchhoff_false.png')
+
+"""
+To generate the Kirchhoff Graph for the matrix
 1 0 2 1
 0 1 1 2
 """
